@@ -5,7 +5,73 @@
   box-sizing: border-box;
 }
 
+/* COLORS */
+.bg-black {
+  background-color: black;
+}
+
+.bg-gray {
+  background-color: #282828;
+}
+
 /* GENERICS */
 body {
   font-family: "Montserrat", sans-serif;
+  color: white;
 }
+
+/* UTILS */
+
+.debug .border {
+  border: red dashed 1px;
+}
+
+.container-100vh {
+  height: 100vh;
+}
+
+.container-100vw {
+  height: 100%;
+  width: 100vw;
+}
+
+.container-100 {
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.flex-c {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.overflow {
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+/* .col-90-c {
+  flex-basis: 90%;
+} */
+
+.col-100px-c {
+  flex-basis: 100px;
+  flex-shrink: 0;
+}
+
+.col-85px {
+  flex-basis: 85px;
+  flex-shrink: 0;
+}
+
+/* .col-95 {
+  flex-basis: 95%;
+} */
