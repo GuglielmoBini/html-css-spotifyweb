@@ -54,13 +54,9 @@ body {
 }
 
 .overflow {
-  height: calc(100vh - 200px);
+  height: calc(100vh - 100px);
   overflow-y: auto;
 }
-
-/* .col-90-c {
-  flex-basis: 90%;
-} */
 
 .col-100px-c {
   flex-basis: 100px;
@@ -72,6 +68,19 @@ body {
   flex-shrink: 0;
 }
 
-/* .col-95 {
-  flex-basis: 95%;
-} */
+/* HEADER */
+header {
+  height: 100px;
+  background-color: black;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  left: 85px;
+  right: 0;
+}
+
+/* MAIN */
+main {
+  position: relative;
+  background-color: #141921;
+}
