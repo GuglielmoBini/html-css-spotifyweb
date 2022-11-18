@@ -20,6 +20,22 @@ body {
   color: white;
 }
 
+ul {
+  list-style-type: none;
+}
+
+/* BUTTONS */
+.btn-h {
+  text-decoration: none;
+  padding: 15px 30px;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border: white solid 2px;
+  border-radius: 25px;
+  margin-right: 15px;
+}
+
 /* UTILS */
 
 .debug .border {
@@ -35,13 +51,13 @@ body {
   width: 100vw;
 }
 
-.container-100 {
+.container-main {
   height: 100%;
+  max-width: 600px;
 }
 
 .flex {
   display: flex;
-  /* flex-wrap: wrap; */
 }
 
 .flex-c {
@@ -63,11 +79,6 @@ body {
   flex-shrink: 0;
 }
 
-.col-85px {
-  flex-basis: 85px;
-  flex-shrink: 0;
-}
-
 /* HEADER */
 header {
   height: 100px;
@@ -77,10 +88,60 @@ header {
   top: 0;
   left: 85px;
   right: 0;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* SIDEBAR */
+.sidebar {
+  flex-basis: 85px;
+  flex-shrink: 0;
 }
 
 /* MAIN */
 main {
   position: relative;
   background-color: #141921;
+  padding-top: 120px;
+}
+
+.main-nav {
+  height: 100px;
+}
+.main-nav ul {
+  min-height: 100%;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.main-nav ul li {
+  flex-basis: 95px;
+  flex-shrink: 0;
+}
+
+/* FOOTER */
+.controls {
+  height: 100%;
+}
+
+.controls .current-song,
+.controls .volume {
+  flex-basis: 28%;
+}
+
+.controls .music-controls {
+  flex-grow: 1;
+}
+
+/* ********** MEDIA QUERY ********** */
+
+@media screen and (min-width: 638px) {
+  /* Header */
+  header {
+    left: 200px;
+  }
+  /* Sidebar */
+  .sidebar {
+    flex-basis: 200px;
+  }
 }

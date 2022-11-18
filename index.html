@@ -26,18 +26,38 @@
 
     <title>Spotify</title>
   </head>
-  <body>
+  <body class="debug">
     <section id="main-footer">
       <div class="container-100vh flex-c border">
         <div class="flex-grow bg-black border">
           <div class="container-100vw flex">
-            <div class="col-85px border">SIDEBAR</div>
+            <div class="sidebar border">SIDEBAR</div>
             <main class="flex-grow overflow border">
-              <header>HEADER</header>
+              <header class="flex border">
+                <a class="btn-h" href="#">EFFETTUA L'UPGRADE</a>
+              </header>
+              <div class="container-main border">
+                <nav class="main-nav border">
+                  <ul class="flex">
+                    <li class="border">link</li>
+                    <li class="border">link</li>
+                    <li class="border">link</li>
+                    <li class="border">link</li>
+                    <li class="border">link</li>
+                    <li class="border">link</li>
+                  </ul>
+                </nav>
+              </div>
             </main>
           </div>
         </div>
-        <footer class="col-100px-c bg-gray border">FOOTER</footer>
+        <footer class="col-100px-c bg-gray border">
+          <div class="controls flex border">
+            <div class="current-song border">musica</div>
+            <div class="music-controls border">controlli</div>
+            <div class="volume border">volume</div>
+          </div>
+        </footer>
       </div>
     </section>
   </body>
