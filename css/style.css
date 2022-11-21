@@ -24,6 +24,10 @@ ul {
   list-style-type: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* BUTTONS */
 .btn-h {
   text-decoration: none;
@@ -52,8 +56,8 @@ ul {
 }
 
 .container-main {
-  height: 100%;
-  max-width: 600px;
+  max-width: 700px;
+  padding-right: 20px;
 }
 
 .flex {
@@ -86,7 +90,7 @@ header {
   opacity: 0.7;
   position: fixed;
   top: 0;
-  left: 85px;
+  left: 60px;
   right: 0;
   justify-content: flex-end;
   align-items: center;
@@ -94,29 +98,78 @@ header {
 
 /* SIDEBAR */
 .sidebar {
-  flex-basis: 85px;
+  flex-basis: 60px;
   flex-shrink: 0;
+  text-align: center;
+  justify-content: space-between;
 }
 
-/* MAIN */
+.sidebar figure {
+  padding: 10px;
+}
+
+.top-sidebar figure:first-child {
+  margin-bottom: 10px;
+}
+
+.bottom-sidebar img {
+  max-height: 20px;
+}
+
+.side-m {
+  display: none;
+}
+
+.side-m img {
+  max-width: 70%;
+}
+
+/* .bottom-sidebar figure:first-child img {
+  max-width: 50%;
+}
+
+.bottom-sidebar figure:last-child img {
+  max-width: 70%;
+} */
+
+/* MAIN - MAIN NAVBAR */
 main {
   position: relative;
   background-color: #141921;
   padding-top: 120px;
+  padding-left: 20px;
 }
 
 .main-nav {
-  height: 100px;
+  min-height: 100px;
 }
 .main-nav ul {
-  min-height: 100%;
+  height: 100%;
   text-align: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .main-nav ul li {
-  flex-basis: 95px;
+  flex-basis: 105px;
+  height: 50px;
   flex-shrink: 0;
+}
+
+/* RECENTLY PLAYED */
+.row {
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+
+.col {
+  flex-basis: 50%;
+  min-height: 300px;
+}
+
+.card {
+  height: 100%;
+  padding: 10px;
 }
 
 /* FOOTER */
@@ -143,5 +196,34 @@ main {
   /* Sidebar */
   .sidebar {
     flex-basis: 200px;
+    text-align: left;
+  }
+
+  .side-m {
+    display: block;
+  }
+
+  .side-xs {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 877px) {
+  .container-main {
+    max-width: 1000px;
+  }
+
+  .col {
+    flex-basis: 25%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .container-main {
+    max-width: 100%;
+  }
+
+  .col {
+    flex-basis: calc(100% / 6);
   }
 }

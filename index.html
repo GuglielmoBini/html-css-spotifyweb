@@ -27,38 +27,116 @@
     <title>Spotify</title>
   </head>
   <body class="debug">
-    <section id="main-footer">
-      <div class="container-100vh flex-c border">
-        <div class="flex-grow bg-black border">
-          <div class="container-100vw flex">
-            <div class="sidebar border">SIDEBAR</div>
-            <main class="flex-grow overflow border">
-              <header class="flex border">
-                <a class="btn-h" href="#">EFFETTUA L'UPGRADE</a>
-              </header>
-              <div class="container-main border">
-                <nav class="main-nav border">
-                  <ul class="flex">
-                    <li class="border">link</li>
-                    <li class="border">link</li>
-                    <li class="border">link</li>
-                    <li class="border">link</li>
-                    <li class="border">link</li>
-                    <li class="border">link</li>
-                  </ul>
-                </nav>
-              </div>
-            </main>
+    <div class="container-100vh flex-c border">
+      <div class="flex-grow flex bg-black border">
+        <!-- <div class="container-100vw flex"> -->
+        <!-- SIDEBAR -->
+        <div class="sidebar flex-c border">
+          <div class="top-sidebar">
+            <figure class="side-xs">
+              <img src="img/logo-small.svg" alt="logo-s" />
+            </figure>
+            <figure class="side-m">
+              <img src="img/logo.svg" alt="logo-m" />
+            </figure>
+            <figure>
+              <img src="img/home.svg" alt="home" />
+            </figure>
+            <figure>
+              <img src="img/search.svg" alt="search" />
+            </figure>
+            <figure>
+              <img src="img/libreria.svg" alt="library" />
+            </figure>
+          </div>
+          <div class="bottom-sidebar">
+            <figure>
+              <img src="img/download.svg" alt="download" />
+            </figure>
+            <figure>
+              <img src="img/profile.svg" alt="profile" />
+            </figure>
           </div>
         </div>
-        <footer class="col-100px-c bg-gray border">
-          <div class="controls flex border">
-            <div class="current-song border">musica</div>
-            <div class="music-controls border">controlli</div>
-            <div class="volume border">volume</div>
+        <main class="flex-grow overflow border">
+          <!-- HEADER -->
+          <header class="flex border">
+            <a class="btn-h" href="#">EFFETTUA L'UPGRADE</a>
+          </header>
+          <!-- MAIN NAVBAR -->
+          <nav class="main-nav border">
+            <ul class="flex">
+              <li class="border">link</li>
+              <li class="border">link</li>
+              <li class="border">link</li>
+              <li class="border">link</li>
+              <li class="border">link</li>
+              <li class="border">link</li>
+            </ul>
+          </nav>
+          <!-- RECENTLY PLAYED -->
+          <div class="container-main border">
+            <section id="rec-played">
+              <h2>Recently Played</h2>
+              <div class="row flex border">
+                <div class="col border">
+                  <div class="card border"></div>
+                </div>
+                <div class="col border">
+                  <div class="card border"></div>
+                </div>
+                <div class="col border">
+                  <div class="card border"></div>
+                </div>
+                <div class="col border">
+                  <div class="card border"></div>
+                </div>
+                <div class="col border">
+                  <div class="card border"></div>
+                </div>
+                <div class="col border">
+                  <div class="card border"></div>
+                </div>
+              </div>
+            </section>
+            <!-- CREATO PER JOHN DOE -->
+            <section id="forjohndoe">
+              <h2>Creato per John Doe</h2>
+              <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+              <div class="row flex border">
+                <div class="col border">
+                  <div class="card border"></div>
+                </div>
+                <div class="col border">
+                  <div class="card border"></div>
+                </div>
+              </div>
+            </section>
+            <!-- ARTISTI PIù POPOLARI -->
+            <section id="artists">
+              <h2>Artisti più popolari</h2>
+              <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+              <div class="row flex border">
+                <div class="col border">
+                  <div class="card border"></div>
+                </div>
+                <div class="col border">
+                  <div class="card border"></div>
+                </div>
+              </div>
+            </section>
           </div>
-        </footer>
+        </main>
+        <!-- </div> -->
       </div>
-    </section>
+      <!-- FOOTER -->
+      <footer class="col-100px-c bg-gray border">
+        <div class="controls flex border">
+          <div class="current-song border">musica</div>
+          <div class="music-controls border">controlli</div>
+          <div class="volume border">volume</div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
