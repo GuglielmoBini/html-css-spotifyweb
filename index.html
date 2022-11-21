@@ -27,9 +27,9 @@
     <title>Spotify</title>
   </head>
   <body>
-    <div class="top-content flex bg-black border">
+    <div class="top-content flex bg-black">
       <!-- SIDEBAR -->
-      <div class="sidebar overflow flex-c border">
+      <div class="sidebar overflow flex-c">
         <div class="top-sidebar">
           <figure class="side-small">
             <img src="img/logo-small.svg" alt="logo-s" />
@@ -91,29 +91,29 @@
           </a>
         </div>
       </div>
-      <main class="flex-grow overflow border">
+      <main class="flex-grow overflow">
         <!-- HEADER -->
-        <header class="flex border">
+        <header class="flex">
           <a class="btn-h" href="#">EFFETTUA L'UPGRADE</a>
         </header>
         <!-- MAIN NAVBAR -->
-        <nav class="main-nav border">
+        <nav class="main-nav">
           <ul class="flex">
-            <li class="border"><a href="#">IN EVIDENZA</a></li>
-            <li class="border"><a href="#">PODCAST</a></li>
-            <li class="border"><a href="#">CLASSIFICHE</a></li>
-            <li class="border"><a href="#">GENERI E MOOD</a></li>
-            <li class="border"><a href="#">NUOVE USCITE</a></li>
-            <li class="border"><a href="#">SCOPRI</a></li>
+            <li><a href="#">IN EVIDENZA</a></li>
+            <li><a href="#">PODCAST</a></li>
+            <li><a href="#">CLASSIFICHE</a></li>
+            <li><a href="#">GENERI E MOOD</a></li>
+            <li><a href="#">NUOVE USCITE</a></li>
+            <li><a href="#">SCOPRI</a></li>
           </ul>
         </nav>
         <!-- RECENTLY PLAYED -->
-        <div class="container-main border">
+        <div class="container-main">
           <section id="rec-played">
             <h2>Recently Played</h2>
-            <div class="row flex border">
-              <div class="col border">
-                <div class="card border">
+            <div class="row flex">
+              <div class="col">
+                <div class="card">
                   <figure>
                     <img src="img/metal_lifting.jpg" alt="Heavy Metal" />
                   </figure>
@@ -121,8 +121,8 @@
                   <span>Subtitle</span>
                 </div>
               </div>
-              <div class="col border">
-                <div class="card border">
+              <div class="col">
+                <div class="card">
                   <figure>
                     <img src="img/stranger.jpeg" alt="Stranger Things" />
                   </figure>
@@ -133,8 +133,8 @@
                   <span>Kyle Dixon & Michael Stein</span>
                 </div>
               </div>
-              <div class="col border">
-                <div class="card border">
+              <div class="col">
+                <div class="card">
                   <figure>
                     <img src="img/aquietplace.jpeg" alt="A Quiet Place" />
                   </figure>
@@ -142,8 +142,8 @@
                   <span>Subtitle</span>
                 </div>
               </div>
-              <div class="col border">
-                <div class="card border">
+              <div class="col">
+                <div class="card">
                   <figure>
                     <img src="img/split.jpeg" alt="Split" />
                   </figure>
@@ -151,8 +151,8 @@
                   <span>Subtitle</span>
                 </div>
               </div>
-              <div class="col border">
-                <div class="card border">
+              <div class="col">
+                <div class="card">
                   <figure>
                     <img src="img/cure.jpeg" alt="A Cure For Wellness" />
                   </figure>
@@ -160,8 +160,8 @@
                   <span>Subtitle</span>
                 </div>
               </div>
-              <div class="col border">
-                <div class="card border">
+              <div class="col">
+                <div class="card">
                   <figure>
                     <img src="img/sinister.jpeg" alt="Sinister" />
                   </figure>
@@ -175,17 +175,17 @@
           <section id="forjohndoe">
             <h2>Creato per John Doe</h2>
             <p>Più ascolti, più accurati saranno i suggerimenti.</p>
-            <div class="row flex border">
-              <div class="col border">
-                <div class="card border">
+            <div class="row flex">
+              <div class="col">
+                <div class="card">
                   <figure>
                     <img src="img/radar.jpeg" alt="Release Radar" />
                   </figure>
                   <h4>Release Radar</h4>
                 </div>
               </div>
-              <div class="col border">
-                <div class="card border">
+              <div class="col">
+                <div class="card">
                   <figure>
                     <img src="img/mixdaily.jpeg" alt="Daily Mix" />
                   </figure>
@@ -198,17 +198,17 @@
           <section id="artists">
             <h2>Artisti più popolari</h2>
             <p>Più ascolti, più accurati saranno i suggerimenti.</p>
-            <div class="row flex border">
-              <div class="col border">
-                <div class="card border">
+            <div class="row flex">
+              <div class="col">
+                <div class="card">
                   <figure>
                     <img src="img/youg.jpeg" alt="Lana Del Rey" />
                   </figure>
                   <h4>Lana Del Rey</h4>
                 </div>
               </div>
-              <div class="col border">
-                <div class="card border">
+              <div class="col">
+                <div class="card">
                   <figure>
                     <img src="img/einaudi.jpeg" alt="Einaudi" />
                   </figure>
@@ -221,11 +221,48 @@
       </main>
     </div>
     <!-- FOOTER -->
-    <footer class="bg-gray border">
-      <div class="controls flex border">
-        <div class="current-song border">musica</div>
-        <div class="music-controls border">controlli</div>
-        <div class="volume border">volume</div>
+    <footer class="bg-gray">
+      <div class="controls flex">
+        <div class="current-song flex">
+          <div>
+            <figure>
+              <img src="img/sinister.jpeg" alt="Sinister" />
+            </figure>
+          </div>
+          <div class="song-info flex">
+            <div>Sinister</div>
+            <div>Brano</div>
+            <div>Nome</div>
+          </div>
+          <div class="cs-icons flex">
+            <div><i class="fa-regular fa-heart"></i></div>
+            <div><i class="fa-regular fa-folder"></i></div>
+          </div>
+        </div>
+        <div class="music-controls flex-c">
+          <div class="btn-music flex">
+            <i class="fa-solid fa-shuffle"></i>
+            <i class="fa-solid fa-backward-step"></i>
+            <i class="fa-regular fa-circle-play"></i>
+            <i class="fa-solid fa-forward-step"></i>
+            <i class="fa-solid fa-repeat"></i>
+          </div>
+          <div class="progress-music flex">
+            <div class="progress-sec">0:25</div>
+            <div class="progress-bar">
+              <div class="value"></div>
+            </div>
+            <div class="progress-sec">4:35</div>
+          </div>
+        </div>
+        <div class="volume flex">
+          <i class="fa-solid fa-list"></i>
+          <i class="fa-solid fa-desktop"></i>
+          <i class="fa-solid fa-volume-high"></i>
+          <div class="progress-volume">
+            <div class="value"></div>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
