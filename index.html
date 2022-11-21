@@ -26,117 +26,148 @@
 
     <title>Spotify</title>
   </head>
-  <body class="debug">
-    <div class="container-100vh flex-c border">
-      <div class="flex-grow flex bg-black border">
-        <!-- <div class="container-100vw flex"> -->
-        <!-- SIDEBAR -->
-        <div class="sidebar flex-c border">
-          <div class="top-sidebar">
-            <figure class="side-xs">
-              <img src="img/logo-small.svg" alt="logo-s" />
-            </figure>
-            <figure class="side-m">
-              <img src="img/logo.svg" alt="logo-m" />
-            </figure>
-            <figure>
+  <body>
+    <div class="top-content flex bg-black border">
+      <!-- SIDEBAR -->
+      <div class="sidebar overflow flex-c border">
+        <div class="top-sidebar">
+          <figure class="side-small">
+            <img src="img/logo-small.svg" alt="logo-s" />
+          </figure>
+          <figure class="side-large">
+            <img src="img/logo.svg" alt="logo-m" />
+          </figure>
+          <a href="#">
+            <figure class="flex">
               <img src="img/home.svg" alt="home" />
+              <span>Home</span>
             </figure>
-            <figure>
+          </a>
+          <a href="#">
+            <figure class="flex">
               <img src="img/search.svg" alt="search" />
+              <span>Cerca</span>
             </figure>
-            <figure>
+          </a>
+          <a href="#">
+            <figure class="flex">
               <img src="img/libreria.svg" alt="library" />
+              <span>La tua libreria</span>
             </figure>
-          </div>
-          <div class="bottom-sidebar">
-            <figure>
-              <img src="img/download.svg" alt="download" />
-            </figure>
-            <figure>
-              <img src="img/profile.svg" alt="profile" />
-            </figure>
-          </div>
+          </a>
         </div>
-        <main class="flex-grow overflow border">
-          <!-- HEADER -->
-          <header class="flex border">
-            <a class="btn-h" href="#">EFFETTUA L'UPGRADE</a>
-          </header>
-          <!-- MAIN NAVBAR -->
-          <nav class="main-nav border">
-            <ul class="flex">
-              <li class="border">link</li>
-              <li class="border">link</li>
-              <li class="border">link</li>
-              <li class="border">link</li>
-              <li class="border">link</li>
-              <li class="border">link</li>
+        <div class="center-sidebar flex-grow">
+          <div class="playlist">
+            <h4>PLAYLIST</h4>
+            <a href="#">
+              <div class="flex">
+                <i class="fa-sharp fa-solid fa-square-plus fa-3x"></i>
+                <span>Crea Playlist</span>
+              </div>
+            </a>
+            <ul>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
             </ul>
-          </nav>
-          <!-- RECENTLY PLAYED -->
-          <div class="container-main border">
-            <section id="rec-played">
-              <h2>Recently Played</h2>
-              <div class="row flex border">
-                <div class="col border">
-                  <div class="card border"></div>
-                </div>
-                <div class="col border">
-                  <div class="card border"></div>
-                </div>
-                <div class="col border">
-                  <div class="card border"></div>
-                </div>
-                <div class="col border">
-                  <div class="card border"></div>
-                </div>
-                <div class="col border">
-                  <div class="card border"></div>
-                </div>
-                <div class="col border">
-                  <div class="card border"></div>
-                </div>
-              </div>
-            </section>
-            <!-- CREATO PER JOHN DOE -->
-            <section id="forjohndoe">
-              <h2>Creato per John Doe</h2>
-              <p>Più ascolti, più accurati saranno i suggerimenti.</p>
-              <div class="row flex border">
-                <div class="col border">
-                  <div class="card border"></div>
-                </div>
-                <div class="col border">
-                  <div class="card border"></div>
-                </div>
-              </div>
-            </section>
-            <!-- ARTISTI PIù POPOLARI -->
-            <section id="artists">
-              <h2>Artisti più popolari</h2>
-              <p>Più ascolti, più accurati saranno i suggerimenti.</p>
-              <div class="row flex border">
-                <div class="col border">
-                  <div class="card border"></div>
-                </div>
-                <div class="col border">
-                  <div class="card border"></div>
-                </div>
-              </div>
-            </section>
           </div>
-        </main>
-        <!-- </div> -->
-      </div>
-      <!-- FOOTER -->
-      <footer class="col-100px-c bg-gray border">
-        <div class="controls flex border">
-          <div class="current-song border">musica</div>
-          <div class="music-controls border">controlli</div>
-          <div class="volume border">volume</div>
         </div>
-      </footer>
+        <div class="bottom-sidebar">
+          <a href="#">
+            <figure class="flex">
+              <img src="img/download.svg" alt="download" />
+              <span>Installa App</span>
+            </figure>
+          </a>
+          <a href="#">
+            <figure class="flex">
+              <img src="img/profile.svg" alt="profile" />
+              <span>John Doe</span>
+            </figure>
+          </a>
+        </div>
+      </div>
+      <main class="flex-grow overflow border">
+        <!-- HEADER -->
+        <header class="flex border">
+          <a class="btn-h" href="#">EFFETTUA L'UPGRADE</a>
+        </header>
+        <!-- MAIN NAVBAR -->
+        <nav class="main-nav border">
+          <ul class="flex">
+            <li class="border">link</li>
+            <li class="border">link</li>
+            <li class="border">link</li>
+            <li class="border">link</li>
+            <li class="border">link</li>
+            <li class="border">link</li>
+          </ul>
+        </nav>
+        <!-- RECENTLY PLAYED -->
+        <div class="container-main border">
+          <section id="rec-played">
+            <h2>Recently Played</h2>
+            <div class="row flex border">
+              <div class="col border">
+                <div class="card border"></div>
+              </div>
+              <div class="col border">
+                <div class="card border"></div>
+              </div>
+              <div class="col border">
+                <div class="card border"></div>
+              </div>
+              <div class="col border">
+                <div class="card border"></div>
+              </div>
+              <div class="col border">
+                <div class="card border"></div>
+              </div>
+              <div class="col border">
+                <div class="card border"></div>
+              </div>
+            </div>
+          </section>
+          <!-- CREATO PER JOHN DOE -->
+          <section id="forjohndoe">
+            <h2>Creato per John Doe</h2>
+            <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+            <div class="row flex border">
+              <div class="col border">
+                <div class="card border"></div>
+              </div>
+              <div class="col border">
+                <div class="card border"></div>
+              </div>
+            </div>
+          </section>
+          <!-- ARTISTI PIù POPOLARI -->
+          <section id="artists">
+            <h2>Artisti più popolari</h2>
+            <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+            <div class="row flex border">
+              <div class="col border">
+                <div class="card border"></div>
+              </div>
+              <div class="col border">
+                <div class="card border"></div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
     </div>
+    <!-- FOOTER -->
+    <footer class="bg-gray border">
+      <div class="controls flex border">
+        <div class="current-song border">musica</div>
+        <div class="music-controls border">controlli</div>
+        <div class="volume border">volume</div>
+      </div>
+    </footer>
   </body>
 </html>

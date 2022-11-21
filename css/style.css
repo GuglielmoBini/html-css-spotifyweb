@@ -28,9 +28,13 @@ img {
   max-width: 100%;
 }
 
+a {
+  display: block;
+  text-decoration: none;
+}
+
 /* BUTTONS */
 .btn-h {
-  text-decoration: none;
   padding: 15px 30px;
   color: white;
   font-size: 0.7rem;
@@ -46,13 +50,9 @@ img {
   border: red dashed 1px;
 }
 
-.container-100vh {
-  height: 100vh;
-}
-
-.container-100vw {
-  height: 100%;
-  width: 100vw;
+.top-content,
+.overflow {
+  height: calc(100vh - 100px);
 }
 
 .container-main {
@@ -74,13 +74,15 @@ img {
 }
 
 .overflow {
-  height: calc(100vh - 100px);
   overflow-y: auto;
 }
 
-.col-100px-c {
-  flex-basis: 100px;
-  flex-shrink: 0;
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
 }
 
 /* HEADER */
@@ -94,6 +96,7 @@ header {
   right: 0;
   justify-content: flex-end;
   align-items: center;
+  z-index: 1;
 }
 
 /* SIDEBAR */
@@ -101,36 +104,64 @@ header {
   flex-basis: 60px;
   flex-shrink: 0;
   text-align: center;
-  justify-content: space-between;
 }
 
 .sidebar figure {
   padding: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
-.top-sidebar figure:first-child {
+.sidebar span {
+  display: none;
+  margin-left: 5px;
+  color: #a3a3a3;
+  font-weight: bold;
+}
+
+.side-small,
+.side-large {
   margin-bottom: 10px;
+}
+
+.top-sidebar img {
+  max-width: 30px;
+}
+
+.playlist {
+  display: none;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.playlist a {
+  margin: 20px 0;
+}
+
+.playlist i {
+  color: #a3a3a3;
+}
+
+.playlist li {
+  color: #a3a3a3;
+  margin-bottom: 15px;
+}
+
+.playlist div {
+  align-items: center;
 }
 
 .bottom-sidebar img {
   max-height: 20px;
 }
 
-.side-m {
+.side-large {
   display: none;
 }
 
-.side-m img {
-  max-width: 70%;
+.side-large img {
+  max-width: 90%;
 }
-
-/* .bottom-sidebar figure:first-child img {
-  max-width: 50%;
-}
-
-.bottom-sidebar figure:last-child img {
-  max-width: 70%;
-} */
 
 /* MAIN - MAIN NAVBAR */
 main {
@@ -191,19 +222,28 @@ main {
 @media screen and (min-width: 638px) {
   /* Header */
   header {
-    left: 200px;
+    left: 230px;
   }
   /* Sidebar */
   .sidebar {
-    flex-basis: 200px;
+    flex-basis: 230px;
     text-align: left;
   }
 
-  .side-m {
+  .sidebar figure {
+    justify-content: flex-start;
+  }
+
+  .sidebar span {
+    display: inline-block;
+  }
+
+  .side-large,
+  .playlist {
     display: block;
   }
 
-  .side-xs {
+  .side-small {
     display: none;
   }
 }
