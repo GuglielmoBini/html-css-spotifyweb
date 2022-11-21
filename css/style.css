@@ -33,6 +33,14 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  margin: 15px 0;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
 /* BUTTONS */
 .btn-h {
   padding: 15px 30px;
@@ -136,15 +144,11 @@ header {
 
 .playlist a {
   margin: 20px 0;
+  color: #a3a3a3;
 }
 
 .playlist i {
   color: #a3a3a3;
-}
-
-.playlist li {
-  color: #a3a3a3;
-  margin-bottom: 15px;
 }
 
 .playlist div {
@@ -182,25 +186,48 @@ main {
 }
 
 .main-nav ul li {
-  flex-basis: 105px;
   height: 50px;
+  margin: 0 10px;
   flex-shrink: 0;
 }
 
-/* RECENTLY PLAYED */
+.main-nav ul a {
+  padding: 10px 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #a3a3a3;
+}
+
+/* RECENTLY PLAYED, CREATO PER JOHN DOE, ARTISTI */
 .row {
   flex-wrap: wrap;
-  margin: 0 -20px;
+  margin: 0 -10px;
 }
 
 .col {
   flex-basis: 50%;
-  min-height: 300px;
+  min-height: 330px;
 }
 
 .card {
   height: 100%;
   padding: 10px;
+  text-align: center;
+}
+#rec-played h4,
+#forjohndoe h4,
+#artists h4 {
+  margin: 10px 0;
+}
+
+#rec-played span {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #a3a3a3;
+}
+
+#artists img {
+  border-radius: 50%;
 }
 
 /* FOOTER */
@@ -258,7 +285,7 @@ main {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1200px) {
   .container-main {
     max-width: 100%;
   }
