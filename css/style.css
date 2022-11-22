@@ -58,8 +58,7 @@ i {
 }
 
 /* UTILS */
-.top-content,
-.overflow {
+.top-content {
   height: calc(100vh - 100px);
 }
 
@@ -89,6 +88,15 @@ i {
   flex-basis: 60px;
   flex-shrink: 0;
   text-align: center;
+}
+
+.top-sidebar {
+  height: calc(100% - 100px);
+  overflow: hidden;
+}
+
+.bottom-sidebar {
+  height: 100px;
 }
 
 .sidebar figure {
