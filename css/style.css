@@ -153,6 +153,7 @@ header {
   background-color: black;
   opacity: 0.5;
   position: sticky;
+  z-index: 1;
   top: 0;
   left: 0;
   justify-content: flex-end;
@@ -169,8 +170,6 @@ main {
   min-height: 100px;
 }
 .main-nav ul {
-  height: 100%;
-  text-align: center;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -226,10 +225,6 @@ main {
 }
 
 /* FOOTER */
-.border {
-  border: red dashed 1px;
-}
-
 footer {
   position: absolute;
   bottom: 0;
@@ -274,10 +269,13 @@ footer i {
 
 .song-info > div {
   margin-left: 10px;
+  cursor: pointer;
+  color: #a3a3a3;
 }
 
 .song-info > div:first-child {
   font-size: 1.1rem;
+  font-weight: bold;
 }
 
 .cs-icons {
@@ -351,12 +349,26 @@ footer i {
   border-radius: 5px;
 }
 
+.marker {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #dedede;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  display: none;
+}
+
 /* EFFETTI HOVER */
 
 i:hover,
 .main-nav ul a:hover,
 .sidebar span:hover,
-.playlist a:hover {
+.playlist a:hover,
+.song-info div:hover {
   color: white;
 }
 
@@ -389,6 +401,24 @@ header .btn-h:hover {
 
 #artists figure:hover::after {
   border-radius: 50%;
+}
+
+.main-nav li:hover::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #adff2f;
+  margin: 3px auto;
+}
+
+.controls .value:hover {
+  background-color: #adff2f;
+  cursor: pointer;
+}
+
+.controls .value:hover .marker {
+  display: inline-block;
 }
 
 /* ********** MEDIA QUERY ********** */
