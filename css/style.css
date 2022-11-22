@@ -62,7 +62,7 @@ i {
   height: calc(100vh - 100px);
 }
 
-.container-main {
+.gallery {
   padding: 0 20px;
 }
 
@@ -92,7 +92,11 @@ i {
 
 .top-sidebar {
   height: calc(100% - 100px);
-  overflow: hidden;
+  overflow-y: hidden;
+}
+
+.bottom-navbar {
+  overflow-y: hidden;
 }
 
 .bottom-sidebar {
@@ -122,9 +126,14 @@ i {
 }
 
 .playlist {
+  height: 100%;
   display: none;
   padding: 10px;
   margin-top: 20px;
+}
+
+.playlist ul {
+  height: 100%;
 }
 
 .playlist a {
@@ -216,6 +225,7 @@ main {
   position: relative;
   transition: transform 0.5s;
 }
+
 #rec-played h4,
 #forjohndoe h4,
 #artists h4 {
@@ -325,12 +335,16 @@ footer i {
   font-weight: bold;
 }
 
-.progress-bar {
-  flex-basis: 50%;
+.progress-bar,
+.progress-volume {
   height: 5px;
   border-radius: 5px;
   background-color: #a3a3a3;
   position: relative;
+}
+
+.progress-bar {
+  flex-basis: 50%;
   margin: 0 5px;
 }
 
@@ -340,11 +354,7 @@ footer i {
 }
 
 .progress-volume {
-  width: 40%;
-  height: 5px;
-  border-radius: 5px;
-  background-color: #a3a3a3;
-  position: relative;
+  flex-basis: 40%;
 }
 
 .value {
@@ -384,7 +394,7 @@ header .btn-h:hover {
   transform: scale(1.1);
 }
 
-.container-main .card:hover figure {
+.gallery .card:hover figure {
   transform: scale(1.05) translateY(-10px);
 }
 
