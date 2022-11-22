@@ -26,6 +26,7 @@ ul {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 a {
@@ -63,7 +64,6 @@ i {
 }
 
 .container-main {
-  max-width: 700px;
   padding: 0 20px;
 }
 
@@ -127,8 +127,16 @@ i {
   align-items: center;
 }
 
-.bottom-sidebar img {
-  max-height: 20px;
+.bottom-sidebar a:first-child figure img {
+  max-height: 15px;
+}
+
+.img-circle {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #a3a3a3;
+  object-fit: cover;
 }
 
 .side-large {
@@ -192,14 +200,19 @@ main {
 }
 
 .card {
-  height: 100%;
   padding: 10px;
   text-align: center;
+  cursor: pointer;
+}
+
+.card figure {
+  position: relative;
+  transition: transform 0.5s;
 }
 #rec-played h4,
 #forjohndoe h4,
 #artists h4 {
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
 #rec-played span {
@@ -232,11 +245,11 @@ footer {
 
 .controls .current-song,
 .controls .volume {
-  flex-basis: 30%;
+  flex-basis: 230px;
 }
 
 .controls .music-controls {
-  flex-basis: 40%;
+  flex-grow: 1;
 }
 
 footer i {
@@ -256,10 +269,15 @@ footer i {
 .song-info {
   font-size: 0.8rem;
   flex-wrap: wrap;
+  flex-basis: 100px;
 }
 
 .song-info > div {
   margin-left: 10px;
+}
+
+.song-info > div:first-child {
+  font-size: 1.1rem;
 }
 
 .cs-icons {
@@ -282,11 +300,11 @@ footer i {
 
 .btn-music i:nth-child(3) {
   font-size: 1.5rem;
-  margin: 0 20px;
+  margin: 0 25px;
 }
 
 .btn-music i:nth-child(even) {
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
 .progress-music {
@@ -302,7 +320,7 @@ footer i {
 }
 
 .progress-bar {
-  flex-basis: 70%;
+  flex-basis: 50%;
   height: 5px;
   border-radius: 5px;
   background-color: #a3a3a3;
@@ -333,6 +351,46 @@ footer i {
   border-radius: 5px;
 }
 
+/* EFFETTI HOVER */
+
+i:hover,
+.main-nav ul a:hover,
+.sidebar span:hover,
+.playlist a:hover {
+  color: white;
+}
+
+header .btn-h:hover {
+  transform: scale(1.1);
+}
+
+.container-main .card:hover figure {
+  transform: scale(1.05) translateY(-10px);
+}
+
+#rec-played figure:hover::after,
+#forjohndoe figure:hover::after,
+#artists figure:hover::after {
+  content: "\f144";
+  color: white;
+  font-family: "Font Awesome 6 Free";
+  font-size: 38px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#artists figure:hover::after {
+  border-radius: 50%;
+}
+
 /* ********** MEDIA QUERY ********** */
 
 @media screen and (min-width: 638px) {
@@ -360,21 +418,13 @@ footer i {
   }
 }
 
-@media screen and (min-width: 877px) {
-  .container-main {
-    max-width: 1000px;
-  }
-
+@media screen and (min-width: 820px) {
   .col {
     flex-basis: 25%;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .container-main {
-    max-width: 100%;
-  }
-
   .col {
     flex-basis: calc(100% / 6);
   }
